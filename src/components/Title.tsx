@@ -6,7 +6,7 @@ type TitleProps = {
 
 const Title = (props: TitleProps) => {
   return (
-    <h1>
+    <h1 className='main-title'>
         {props.title}
     </h1>
   )
