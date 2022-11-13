@@ -89,3 +89,40 @@ body{
   color: white;
   background-color: #3C4043;
 }
+
+.my-favorite-color-list{
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+}
+
+.my-favorite-colors-subtitle{
+  font-weight: 700;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.fav-color-item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fav-color-code{
+  width: 28px;
+  height: 28px;
+}
+
+.fav-color-name{
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-align: left;
+  width: 250px;
+}
+
+.remove-color-button{
+  border: 1px solid rgb(184, 183, 183);
+  padding: 7px 10.5px;
+}
