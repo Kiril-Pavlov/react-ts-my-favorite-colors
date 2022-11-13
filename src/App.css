@@ -24,3 +24,68 @@ body{
   font-size: 20px;
   font-family: 'Montserrat', sans-serif;
 }
+
+.add-colors-container{
+  margin: 16px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-container{
+  border: 2px solid rgb(184, 183, 183);
+  height: 50px;
+  width: 334px;
+  display: flex;
+}
+
+.heart-icon{
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-field{
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.input-field input{
+  border: none;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  color: #8A8C8E;
+  padding: 5px;
+}
+
+.input-field input:focus{
+  outline: none;
+}
+
+.selected-color-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 46px;
+  border-left: 1px solid rgb(184, 183, 183);
+}
+
+.display-selected-color{
+  background-color: blueviolet;
+  height: 36px;
+  width: 36px;
+  border-radius: 4px;
+}
+
+.add-color-button{
+  width: 50px;
+  font-size: 20px;
+  color: white;
+  background-color: #3C4043;
+}
