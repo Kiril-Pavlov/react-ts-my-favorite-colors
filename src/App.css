@@ -126,3 +126,33 @@ body{
   border: 1px solid rgb(184, 183, 183);
   padding: 7px 10.5px;
 }
+
+.no-colors-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.no-colors-image-container{
+  border: 1px solid rgb(184, 183, 183);
+  margin-top: 32px;
+}
+
+.no-colors-image-container img{
+  padding: 30px;
+}
+
+.no-colors-subtitle{
+  font-weight: 700;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 16px;
+}
+
+.no-colors-paragraph{
+  font-weight: 400;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 6px;
+}
