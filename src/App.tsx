@@ -39,7 +39,13 @@ function App() {
     }
   }
 
-   
+    //delete one task by id
+    const handleDeleteColor = (color:any) => {
+      
+      const updated = myFavoriteColors.filter((c) => c.name !== color.name);
+      setMyFavoriteColors(updated);
+      // localStorage.setItem("localColorList", JSON.stringify(updated))
+    }
 
   return (
     <div className="main-container">
@@ -51,7 +57,10 @@ function App() {
         setName={setCustomName}
         add = {addColor}
       />
-      <FavoriteColorsList colors={myFavoriteColors} />
+      <FavoriteColorsList 
+        colors={myFavoriteColors} 
+        deleteColor={handleDeleteColor}
+      />
     </div>
   );
 }
