@@ -2,7 +2,14 @@ import React from 'react'
 
 import { AiOutlineHeart } from "react-icons/ai"
 
-const SelectColor = () => {
+type SelectColorProps = {
+  select:string,
+  setColor:any
+}
+
+const SelectColor = ({select,setColor}:SelectColorProps) => {
+
+
   return (
     <div className='add-colors-container'>
         <div className='input-container'>
@@ -13,9 +20,8 @@ const SelectColor = () => {
             <input type="text" placeholder='Color Name' />
           </div>
           <div className='selected-color-container'>
-            <div className='display-selected-color'>
-
-            </div>
+          <input type="color" id="head" name="head" onChange={e => setColor(e.target.value)}
+           value={select} />
           </div>
         </div>
         <button className='add-color-button'>+</button>

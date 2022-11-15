@@ -20,11 +20,13 @@ function App() {
       code:"#00AA00"
     },
   ])
+  const [selectedColor,setSelectedColor] = useState<string>("")
+  console.log(selectedColor)
 
   return (
     <div className="main-container">
       <Title title="My Favorite Colors"/>
-      <SelectColor />
+      <SelectColor select={selectedColor} setColor={setSelectedColor}/>
       <FavoriteColorsList colors={myFavoriteColors}/>
     </div>
   );
