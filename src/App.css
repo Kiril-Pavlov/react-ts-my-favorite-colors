@@ -77,9 +77,11 @@ body{
 }
 
 .display-selected-color{
-  background-color: blueviolet;
-  height: 36px;
-  width: 36px;
+  border:none;
+  padding: 0px;
+  margin: 0px;
+  height: 40px;
+  width: 40px;
   border-radius: 4px;
 }
 

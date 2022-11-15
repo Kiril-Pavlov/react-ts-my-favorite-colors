@@ -21,7 +21,7 @@ const SelectColor = ({select,setColor}:SelectColorProps) => {
           </div>
           <div className='selected-color-container'>
           <input type="color" id="head" name="head" onChange={e => setColor(e.target.value)}
-           value={select} />
+           value={select} className="display-selected-color" />
           </div>
         </div>
         <button className='add-color-button'>+</button>
